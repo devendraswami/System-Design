@@ -1,0 +1,104 @@
+// Day 1 
+
+What is the the goals of a good Programmer ? 
+
+1. Solving Problems 
+2. Writing good code - Maintable , simple and clean code 
+3. Optimised code 
+
+A programmer writes code for humans so He/ she should write clean code so that either team or future self 
+will not face problmes 
+
+
+
+Priciples to write standard code 
+
+1. DRY Principle - Don't Repeat Yourself 
+
+     This will reduce the code length 
+     Less lines - clean code 
+
+    and it solve the code smell problem 
+     
+   Code Smell - A tremonalogy that indicates some problem in your code. 
+
+
+A programmer can solve the code duplication Problem by Writing Methods . And this process is called refactoring. 
+
+
+Refactoring - Changing the code for better without changing the behaviour . 
+
+
+
+2. KISS Principle - Keep It Simple Stupid  
+                    
+              untages complex code 
+              Easier to read code 
+
+
+
+
+3. SOLID Principle - 
+      
+     1.   S- Single Responsiblity Principle 
+     2.   O - Open Closed Principle 
+     3.   L - Liskov Substitution Principle 
+     4 .  I - Interface Segregation Principle 
+     5.   D - Dependency Inversion Principle 
+
+
+
+
+1.  Single Responsiblity Principle- A class should have only one responsiblity 
+ 
+
+  Advantage-  1. Breaking the code into multiple classes . 
+              2. Less code to read for your class 
+              3. easy to maintain 
+              4. Reusablity - each class has one responsiblity so that we can use when it is needed. 
+
+  Disadvantage - 1. Number of files should increses if we break every funtion into classes so do it wisely 
+                 2. Affects the folder Structure. 
+                 3. breaking up the classes unnecssary can lead to the issues. 
+
+
+
+2. Open Closed Principle - classes/ modules / functions / should be open for extension but closed for modification. 
+
+                          means that if we want to add someting to the program then it should not affect the older function so that we don't need to rewrite the program in future . 
+
+
+we can use inheritance inheritance allows us to change the funtion and properties without changing the base class. Method Overriding allows us to extend. We can Override in sunclass and super class is not affected. 
+
+
+
+Pros-  1. Allows reusablity 
+       2. classes we can use extend the functionality of super class without modifying it . 
+
+
+
+3. Liskov Substition Principle - 
+  
+ objects of the super class should be replaceable with the objects of its subclasses without breaking the application. 
+Make sure that child class functions are 100 percent compitible with parent class (return type must be same )
+
+
+
+4. Interface Segration Principle - Programmers should not be forced to depend upon interfaces that they donot use. 
+     
+ (In interface the abstract methods are present which have to implement in the child class so divide the interface wisely so that child classes 
+  forcefully do not need to implement the methods)
+
+
+
+5. Depending Inversion Principle - 
+
+     High level classes should not depend on low level classes both should depend on abstraction 
+     Abstraction should not depend on details  , details should depend on abstraction. 
+
+
+
+
+
+
+      
