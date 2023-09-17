@@ -98,7 +98,89 @@ Make sure that child class functions are 100 percent compitible with parent clas
 
 
 
+// Day2 
+
+4. CUPID Principle -  It is similar like solid Principle 
+
+    C - Composable - easy to use and resue PlayWell with others 
+    U-  Unix Philosophy -  do onething and do it well 
+    P-  Predicatble -  Does what you expect to do 
+    I - Idiomatic -  code should feel natural 
+    D-  Domain Based - using the right keywords 
 
 
+
+  
+Singleton Design Pattern- 
+ 
+ Design Pattern that restricts the instantiatuin of the class to only one object single object 
+ The instatnce will remain same throught the lifetime of application 
+
+ code is present 
+
+
+
+
+Client Server Model- 
+
+Request sent through internet 
+
+        request
+ user ------------> internet ----> server 
+      <------------          <----- 
+        response 
+
+ 
+ DNS(Domain Name System) - 
+    
+       user entres the url 
+      -> Browers request the DNS server 
+      -> DNS server lookup for the address
+      -> Browser sends HTTP/HTTPS requests 
+      -> response from the server         
+        
+   
+     example- pw.live 
+
+
+ Problems- 
+
+ 1. Single Point failure - If server goes down , service unavailable that will give bad experience to users 
+
+ 2. Server Overloaded-  Limitation on the number of request that a server can handle 
+
+  
+Solution-
+
+1.  Increase the number of servers -> Horizontal Scaling 
+
+2. Load Balancer - 
+
+   ->  load balancer handles multiple requests 
+  ->   shares the request across multiple servers 
+ ->  if one of the server goes down service will still continue 
+->  it can minimize server response time 
+-> Continous health checkup for servers 
+ 
+
+
+
+   Load Balancing Algorithms -> 
+        1. Round Robin Algorithm - Request are distributed across the servers in a sequential or rottional mmanner 
+
+            one limitation is that it will doesn't consider the load which is already present on the server which creates the risk of single 
+            server overloading. 
+   
+          2. Least Connection Method -> it will check the number of request already present on the server and sent the request to the which 
+                                         has less number of request 
+
+        expensive as L.B needs to identify the server with fewest request 
+           
+        
+   
+
+ 
+
+ 
 
       
