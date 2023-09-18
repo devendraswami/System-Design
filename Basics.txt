@@ -174,11 +174,212 @@ Solution-
           2. Least Connection Method -> it will check the number of request already present on the server and sent the request to the which 
                                          has less number of request 
 
-        expensive as L.B needs to identify the server with fewest request 
-           
+        expensive as L.B needs to identify the server with fewest request  
+
+
+
+
+// Day 3 of 100daysOfCode 
+
+
+Network Protocols - 
+
+set of rules for data communication between different devices in a network. 
+
+
+Protocols determine - 1. what is being communicated ? 
+                      2. How it is being communicated ? 
+                      3. When it is being communicated ? 
+
+ 
+1. TCP/IP - (Information Protocol)
+             (Transmission Control Protocol) 
+
+-> This establish connection between devices
+-> Connection Oriented Protocol 
+-> Helps in exchange of messages between devieces 
+
+example - Email     
+
+
+2. HTTP(Hyper Text Transfer Protocol) - 
+
+ -> works on client server model 
+-> Most of the data sharing on web is done using HTTP 
+-> Transfering Hyper Text between two systems 
+
+
+3. SMTP - (Simple mail transfer Protocol) - 
+
+  used to send email(tansfer email )  
+
+ First TCP connection to SMTP server is established after successful connection mail is sent 
+
+
+
+4. POP(Post Office Protocol) - 
+
+  used for retriving emails from the server 
+-> We can read e mail offline 
+-> requires internet only for fetching email 
+-> No backUp 
+
+
+5. IMAP(Internet Message Access Protocol) - 
+
+       Messages are stored on the mail server 
+-> have backUp 
+-> establish a connection between client and mail server 
+-> only renders a copy of the messagesthe original stays securely on the server 
+
+
+6. FTP - 
+
+-> used for transfering files from server to client and vice versa 
+-> connection established with TCP/IP 
+-> Protocol to enable data transfer 
+
+
+7. UDP (User Datagram Protocol) - 
+
+     UDP is a connection less protocol 
+-> All real time services 
+-> Radio, broadCasting , live conferences 
+-> No transmission for lost of data protocols 
+
+
+8> PPP (Point to Point Protocol) 
+
+  used for transfering data between two directly connected devices 
+
+
+
+
+ PortNumber - 
+
+        example 192.67.0.1 : 80   (before semicolon ip address and after that PortNumber )   
+
+
+
+Protocols   PortNumber 
+FTP            21
+SMTP           25 
+PPP            110 
+IMAP           143 
+HTTP           80 
+HTTPS          443 
         
    
+Latency and Throughput - 
 
+
+ Latency - The time taken for a packet of data to be transferred accross a network . It is misured in mili seconds 
+
+
+ Throughput- The quantity of data being sent and received withing unit of time (Measured megaBits/sec(mbps)) or gbps 
+
+
+
+Bandwidth- The number of packets of data that can be transfered through the network(Maximum) 
+
+
+Availablity - Percentage of time the service is available 
+
+
+  AV    = uptime / totaltime * 100 
+
+
+   measures avaliblity in 9's 
+       90% -   1 nine 
+       99% -   2 nine 
+       99.9 -  3 nine 
+       99.99-  4 nine 
+
+ 
+
+
+Lecture 06 
+
+ 
+caching - 
+
+ Storing frequently accessed data in a location that is easily and quickely accessible 
+ 
+-> Purpose is to improve performance 
+-> reduce the amount of time taken to access the data 
+-> data is stored closer to the user application 
+
+
+Types of caching - 
+
+1. DataBase Caching - the internal catch used for avoding repeated quaries 
+
+    database caching algorithm stores the data in key-value pairs in hashtable 
+
+2. Memory Caching - Ram is used for storing cached data 
+
+3. Web Caching - example chrome 
+
+         1. web client 
+         2. web server 
+
+
+
+ Disadvantage of caching - 
+
+ 1. cache algorith are hard and complex to implement 
+ 2. Increases the complexity of the program 
+ 3. high maintance cost 
+
+
+  
+ Database - 
+
+ 1. Master-slave algorithm  - 
+
+       slave are copy of master 
+ -> read quaries are handled by slaves 
+-> write quaries are handled by masters 
+
+
+  
+ Advantages - 
+
+  1. If Master database crashes we have copy 
+  2. scaling application 
+  3. improves performance 
+
+  Disadvantage - 
+
+      write operation to master are hard to scale  
+
+
+
+ 
+2. Database Indexing - On the basis of primary key 
+
+
+
+
+
+3. Database replication - (Horizontal scaling ) 
+
+      1. used to keep backup 
+      2. used to scale 
+
+
+4. Database Partitioning- Spliting the subset of data withing the same instance 
+                            example - computer drives 
+
+
+5. Database Sharding - Method of distriibting data across multiple machines  
+
+
+
+
+
+
+   
  
 
  
