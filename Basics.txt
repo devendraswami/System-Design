@@ -379,8 +379,137 @@ Types of caching -
 
 
 
+
+Day4 of 100daysOfCode 
+
+
+
+SQl vs No-Sql 
+
+
+SQl - Structure Query Language 
+
+-> It is vertically Scalable 
+-> Relational Data base  RDBMS 
+-> Structure data is sotored  
+
+ Example - My-SQL , SQLite , Postre SQL
+
+
+
+ No-SQL 
+
+-> better choice if unstructured data is stored
+-> data stored in docoment(Keyvalue)
+-> Horizontally Scalable / dynamic flexible 
+
+
+ Strengths- 
+ 1. Flexible - No relationships 
+             Better choice for unstructured data 
+2. Data Sharding - works very well - Unstructured data can be divided into multiple data stores. 
+                     Horizontal Scaling 
+
+
+WeakNess - 
+1. Lack of consistency 
+       evantual consistancy 
+
+
+
+
+CAP Theorem-  
+
+ C - Consistancy (data among replicate copies)
+ A - Avalibality (for read / write operations )
+ P - Partition tolerance (In case the node falut working )
+
+ 
+"Kuch Paane ke liye kuch khona padta hai" 
+
+It is not possible to gurantee all three desirable properties at the same time in a distributed system with data replication 
+
+(any 2)
+
+
+
+
+
    
  
+Web App architechture- 
+
+ 
+1. Monolithic - 
+                 All funcationalities of project exist in a single dataBase 
+
+
+ Advantages - 
+
+  1. Easier / simple to develop 
+  2. easy to deploy as it is a single jar file 
+  3.  less problem of network latency and security 
+
+
+  Disadvantages- 
+ 
+  1. Becomes very large with time (diffult to manage) 
+  2. need to redeploy whole application even for small change (deplyment time increases)
+  3. difficult for new developers 
+  4. Horizontal scaling is not feasible 
+  5. Single  fault - whole application goes down 
+ 
+
+
+ 
+  2. MicroServices- small multiple services working together 
+
+  
+  -> each microservice has it own database 
+  -> duplication of same data 
+  -> each service can be written in different languages 
+
+
+  Principles - 
+
+  1. Single Responsiblity Principle 
+ 2. Build around business capablities (each microservice use different technology) 
+ 3. Design for failure- even if one microservice goes down should not affect the whole system 
+
+
+ Advantages- 
+
+ 1. easy to manage each service
+ 2. If any update to one m.s then will not affect the other services 
+ 3. easy to onboard new developers 
+ 4. supports horizontal scaling 
+ 5. if any m.s is facing heavy traffic that that specific m.s can be scaled out 
+
+
+ Disadvantages- 
+
+1. Being distributed system is more complex 
+2. skilled developers are required 
+3. m.s are costly(network useage)
+4. latency security issue 
+5. Debugging and testing is complex 
+
+
+
+ SOA (Service Oriented Architechture) - 
+
+ SOA breaks the components into seperate modules, sharing the resources 
+
+ -> Multiple servieces and shared resources 
+
+
+
+
+
+ 
+
+ 
+  
 
  
 
